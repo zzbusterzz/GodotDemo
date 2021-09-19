@@ -40,6 +40,8 @@ window/stretch/aspect="expand"
 [global]
 
 auto=false
+fullscrenn=false
+fullscre=false
 
 [input]
 

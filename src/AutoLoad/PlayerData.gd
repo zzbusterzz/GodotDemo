@@ -8,8 +8,7 @@ var lives: = 5 setget set_lives
 
 func reset() -> void:
 	score = 0
-	lives = 5
-	
+	lives = 5	
 
 func set_score(value : int) -> void:
 	score = value

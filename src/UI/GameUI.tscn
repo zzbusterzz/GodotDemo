@@ -26,6 +26,22 @@ margin_right = -56.6289
 margin_bottom = 82.7941
 theme = ExtResource( 1 )
 text = "Score : %s"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LifeLabel" type="Label" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -154.629
+margin_top = 102.427
+margin_right = -56.6289
+margin_bottom = 134.427
+theme = ExtResource( 1 )
+text = "Life : %s"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Overlay" type="ColorRect" parent="."]
 visible = false

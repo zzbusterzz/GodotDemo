@@ -1,7 +1,6 @@
 extends Actor
 
 var dir : = Vector2.ZERO
-export var lives : = 3
 export var stomp_impulse : = 1000.0
 
 func _on_EnemyDetect_area_entered(area):
@@ -42,5 +41,8 @@ func calc_stomp_velocity(linear_velocity : Vector2, impulse: float) -> Vector2:
 	return out
 
 func die() -> void:
-	PlayerData.lives -= 1
+	PlayerData.lives -= 5
 	queue_free()
+	if PlayerData.lives < 0:
+		get_tree().change_scene("res://src/Screens/EndScreen.tscn")
+
